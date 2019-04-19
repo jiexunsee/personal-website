@@ -10,11 +10,16 @@ class TwoWaysIcon extends React.Component {
 
   renderIcon() {
     return (
-      <img
-        src={this.props.part.image}
-        alt={this.props.part.imageAlt}
+      <div
+        className={styles.imageContainer}
         onClick={() => this.props.selectPart(this.props.part)}
-      />
+      >
+        <img
+          src={require(`${this.props.part.image}`)}
+          alt={this.props.part.imageAlt}
+          className={styles.iconStyle}
+        />
+      </div>
     );
   }
 
@@ -22,7 +27,7 @@ class TwoWaysIcon extends React.Component {
     if (this.props.part.title === this.props.selectedPart.title) {
       return <div>{this.renderIcon()}</div>;
     } else {
-      return <div style={{ opacity: 0.2 }}>{this.renderIcon()}</div>;
+      return <div style={{ opacity: 0.15 }}>{this.renderIcon()}</div>;
     }
   }
 }
