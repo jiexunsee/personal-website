@@ -10,24 +10,6 @@ class AboutPage extends React.Component {
     console.log('clicking');
   }
 
-  renderMainInfo() {
-    return (
-      <div>
-        <img
-          src={require('./profileblur.png')}
-          alt="profile"
-          className={styles.profilepic}
-        />
-
-        <p className={styles.text}>
-          My name is <b>Jie Xun</b>, and I am a Computer Science student at
-          Nanyang Technological University. I will be graduating in December
-          2019.
-        </p>
-      </div>
-    );
-  }
-
   render() {
     var infoStyle, description;
     if (this.props.interest) {
@@ -41,9 +23,7 @@ class AboutPage extends React.Component {
       <div className={styles.contentbox}>
         <AboutMainInfo infoStyle={infoStyle} />
         <EmojiInfo description={description} />
-        <div className={styles.emojibar}>
-          <EmojiList />
-        </div>
+        <EmojiList />
         <div className={styles.helper}>
           <i>(mouse over these for more about me)</i>
         </div>

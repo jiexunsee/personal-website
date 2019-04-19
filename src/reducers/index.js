@@ -54,9 +54,20 @@ const partsReducer = () => {
   ];
 };
 
+const defaultPart = {
+  title: 'God is the loving ruler and creator of the world.',
+  description:
+    'In the beginning, God created the world and all that we see in it. He also made us, people, in his likeness, and put us in charge of the world.',
+  transition: "But this clearly isn't the way it is now...",
+  image: '(link placeholder)',
+  imageAlt: '1'
+};
+
 const selectedPartReducer = (selectedPart = partsReducer()[0], action) => {
   if (action.type === 'PART_SELECTED') {
     return action.payload;
+  } else if (action.type === 'DEFAULT_PART_SELECTED') {
+    return defaultPart;
   }
   return selectedPart;
 };
@@ -73,7 +84,7 @@ const interestsReducer = () => {
     {
       title: 'soccer',
       description:
-        "You'll find me on the football pitch on Sunday afternoons, wearing them mercurials.",
+        "You'll find me on the football pitch on Sunday afternoons, scoring goals in mercurials.",
       image: './soccer.png',
       link: null
     },

@@ -7,6 +7,13 @@ export const selectPart = part => {
   };
 };
 
+export const selectDefaultPart = () => {
+  return {
+    type: 'DEFAULT_PART_SELECTED',
+    payload: 'nothing'
+  };
+};
+
 export const mouseOverInterest = interest => {
   return {
     type: 'INTEREST_SELECTED',

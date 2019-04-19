@@ -1,26 +1,22 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { selectPart } from '../actions';
+import styles from './TwoWays.css';
+import TwoWaysIcon from './TwoWaysIcon';
 
 class TwoWaysPartsList extends React.Component {
   renderList() {
     return this.props.parts.map(part => {
       return (
         <div key={part.title}>
-          <div className="content">
-            <img
-              src={part.image}
-              alt={part.imageAlt}
-              onClick={() => this.props.selectPart(part)}
-            />
-          </div>
+          <TwoWaysIcon part={part} />
         </div>
       );
     });
   }
 
   render() {
-    return <div>{this.renderList()}</div>;
+    return <div className={styles.horizontalList}>{this.renderList()}</div>;
   }
 }
 

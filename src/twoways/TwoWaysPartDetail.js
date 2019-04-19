@@ -1,14 +1,14 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import styles from './TwoWays.css';
 
 const TwoWaysPartDetail = ({ part }) => {
   // part is prop passed into this function component
   return (
     <div>
       <div>
-        <h4>{part.title}</h4>
-        <br />
-        {part.description}
+        <div className={styles.headingStyle}>{part.title}</div>
+        <div className={styles.descriptionStyle}>{part.description}</div>
       </div>
     </div>
   );

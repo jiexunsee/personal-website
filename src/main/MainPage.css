@@ -1,6 +1,7 @@
 :local(.hello) {
   text-align: center;
   font-size: 40px;
+  font-family: monospace;
 }
 
 :local(.text) {
@@ -11,8 +12,20 @@
   text-align: center;
 }
 
-:local(.contentbox) {
+:local(.contentBox) {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+}
+
+:local(.contactBox) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+:local(.contactIcon) {
+  height: 35px;
+  margin: 5px;
 }

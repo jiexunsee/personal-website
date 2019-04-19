@@ -1,0 +1,23 @@
+:local(.horizontalList) {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+:local(.contentBox) {
+  padding: 40px;
+}
+
+:local(.headingStyle) {
+  font-family: Archivo;
+  font-weight: bold;
+  line-height: 20px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+:local(.descriptionStyle) {
+  font-family: Archivo;
+  line-height: 25px;
+  text-align: justify;
+}

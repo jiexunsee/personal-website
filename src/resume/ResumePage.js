@@ -81,6 +81,36 @@ class ResumePage extends React.Component {
             />
           </div>
         </div>
+
+        <div className={styles.sectionTitle}>Projects</div>
+        <div className={styles.rowContent}>
+          <div className={styles.imageContent}>
+            <img
+              // src={require(`${descriptions.cimb.image}`)}
+              src={require('./gnn.png')}
+              alt="gnn"
+              height="100px"
+            />
+          </div>
+          <div className={styles.descriptionContent}>
+            <ResumeEntry entry={descriptions.fyp} />
+          </div>
+        </div>
+        <div className={styles.separatorLine} />
+
+        <div className={styles.rowContent}>
+          <div className={styles.imageContent}>
+            <img
+              // src={require(`${descriptions.cimb.image}`)}
+              src={require('./website.png')}
+              alt="website"
+              height="100px"
+            />
+          </div>
+          <div className={styles.descriptionContent}>
+            <ResumeEntry entry={descriptions.website} />
+          </div>
+        </div>
       </div>
     );
   }

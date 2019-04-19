@@ -20,8 +20,8 @@
 
 :local(.text) {
   font-size: 16px;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding-right: 70px;
+  padding-left: 70px;
   line-height: 30px;
 }
 
@@ -41,6 +41,7 @@
 :local(.mainInfo) {
   display: flex;
   flex-direction: column;
+  text-align: justify;
 }
 
 :local(.emojiList) {

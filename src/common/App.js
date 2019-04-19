@@ -30,9 +30,9 @@ class App extends React.Component {
                 <Link className={styles.link} to="/resume">
                   Resume
                 </Link>
-                <Link className={styles.link} to="/contact">
+                {/* <Link className={styles.link} to="/contact">
                   Contact
-                </Link>
+                </Link> */}
               </header>
             </div>
 
