@@ -1,0 +1,47 @@
+:local(.allContent) {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+}
+
+:local(.rowContent) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px;
+}
+
+:local(.titleAndDescription) {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+:local(.sectionTitle) {
+  font-size: 30px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+:local(.imageContent) {
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+:local(.descriptionContent) {
+  width: 600px;
+}
+
+:local(.separatorLine) {
+  background: black;
+  width: 850px;
+  height: 0.4px;
+  align-self: center;
+}
+
+:local(.descriptionWords) {
+  white-space: pre-wrap;
+}

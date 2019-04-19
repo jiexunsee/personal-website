@@ -1,0 +1,57 @@
+:local(.title) {
+  text-align: center;
+  color: black;
+}
+
+:local(.contentbox) {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 30px;
+}
+
+:local(.profilepic) {
+  height: 150px;
+  width: 150px;
+  align-self: center;
+  margin: 20px;
+  margin-bottom: 40px;
+}
+
+:local(.text) {
+  font-size: 16px;
+  padding-right: 50px;
+  padding-left: 50px;
+  line-height: 30px;
+}
+
+:local(.emojiImage) {
+  height: 70px;
+  width: 70px;
+  padding: 15px;
+}
+
+:local(.emojiInfo) {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:local(.mainInfo) {
+  display: flex;
+  flex-direction: column;
+}
+
+:local(.emojiList) {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+:local(.helper) {
+  opacity: 0.7;
+  align-self: center;
+}

@@ -1,0 +1,11 @@
+.content-area {
+  display: flex;
+  align-content: flex-end;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+  color: black;
+}
