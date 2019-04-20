@@ -7,7 +7,6 @@
 
 :local(.tableStyle) {
   width: 100%;
-  padding: 20px;
   border-collapse: collapse;
 }
 
@@ -19,7 +18,7 @@
   font-size: 30px;
   margin-bottom: 5px;
   margin-top: 45px;
-  margin-left: 40px;
+  margin-left: 20px;
   display: block;
   text-align: start;
 }
@@ -30,14 +29,11 @@
   line-height: 25px;
   font-size: 14px;
   text-align: justify;
-  padding: 40px;
+  padding: 20px;
 }
 
-:local(.separatorLine) {
-  background: black;
-  width: 850px;
-  height: 0.4px;
-  align-self: center;
+:local(.imageContent) {
+  padding: 20px;
 }
 
 /* for ResumeEntry */

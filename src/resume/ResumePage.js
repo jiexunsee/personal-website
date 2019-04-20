@@ -10,7 +10,7 @@ class ResumePage extends React.Component {
         <div className={styles.sectionTitle}>Work Experience</div>
         <table className={styles.tableStyle}>
           <tr className={styles.rowWithBorder}>
-            <td>
+            <td className={styles.imageContent}>
               <img src={require('./hudl.png')} alt="hudl" height="40px" />
             </td>
             <td className={styles.descriptionContent}>
