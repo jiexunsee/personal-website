@@ -9,8 +9,6 @@
 }
 
 :local(.link) {
-  display: flex;
-  align-self: flex-start;
   margin: 10px;
   color: black;
   font-size: 16px;
