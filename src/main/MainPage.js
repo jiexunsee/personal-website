@@ -6,7 +6,7 @@ class MainPage extends React.Component {
   render() {
     return (
       <div className={styles.contentBox}>
-        <div>
+        <div className={styles.textBox}>
           <h1 className={styles.hello}>Hello!</h1>
           <h2 className={styles.text}>My name is Jie Xun.</h2>
           <h4 className={styles.text}>
