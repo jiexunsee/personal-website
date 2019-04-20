@@ -16,26 +16,25 @@ class App extends React.Component {
   render() {
     return (
       <Provider store={createStore(reducers)}>
-        <div className={styles.wholepage}>
-          <div className={styles.allcontent}>
-            <div>
-              <header className={styles.header}>
-                <Link className={styles.link} to="/">
-                  Home
-                </Link>
-                <div className={styles.blankspace} />
-                <Link className={styles.link} to="/about">
-                  About
-                </Link>
-                <Link className={styles.link} to="/resume">
-                  Resume
-                </Link>
-                {/* <Link className={styles.link} to="/contact">
+        <div className={styles.wholePage}>
+          <div>
+            <header className={styles.header}>
+              <Link className={styles.link} to="/">
+                Home
+              </Link>
+              <div className={styles.blankspace} />
+              <Link className={styles.link} to="/about">
+                About
+              </Link>
+              <Link className={styles.link} to="/resume">
+                Resume
+              </Link>
+              {/* <Link className={styles.link} to="/contact">
                   Contact
                 </Link> */}
-              </header>
-            </div>
-
+            </header>
+          </div>
+          <div className={styles.mainContent}>
             <Switch>
               <Route exact path="/" component={MainPage} />
               <Route path="/about" component={AboutPage} />
