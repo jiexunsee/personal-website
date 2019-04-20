@@ -5,7 +5,7 @@
   padding-left: 10px;
   position: fixed;
   top: 0;
-  width: 100%;
+  max-width: 850px;
 }
 
 :local(.link) {
@@ -31,7 +31,6 @@
 :local(.wholePage) {
   display: block;
   height: 100%;
-  position: absolute;
   left: 0;
   right: 0;
   top: 0;
