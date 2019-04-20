@@ -8,6 +8,7 @@
 :local(.tableStyle) {
   width: 100%;
   border-collapse: collapse;
+  table-layout: fixed;
 }
 
 :local(.rowWithBorder) {
@@ -33,7 +34,8 @@
 }
 
 :local(.imageContent) {
-  padding: 20px;
+  padding: 0px;
+  /* max-width: 140px; */
 }
 
 /* for ResumeEntry */

@@ -11,15 +11,15 @@ class ResumePage extends React.Component {
         <table className={styles.tableStyle}>
           <tr className={styles.rowWithBorder}>
             <td className={styles.imageContent}>
-              <img src={require('./hudl.png')} alt="hudl" height="40px" />
+              <img src={require('./hudl.png')} alt="hudl" height="45px" />
             </td>
             <td className={styles.descriptionContent}>
               <ResumeEntry entry={descriptions.hudl} />
             </td>
           </tr>
           <tr>
-            <td>
-              <img src={require('./mclaren.png')} alt="mclaren" height="40px" />
+            <td className={styles.imageContent}>
+              <img src={require('./mclaren.png')} alt="mclaren" height="37px" />
             </td>
             <td className={styles.descriptionContent}>
               <ResumeEntry entry={descriptions.mclaren} />
@@ -33,19 +33,19 @@ class ResumePage extends React.Component {
             <td className={styles.descriptionContent}>
               <ResumeEntry entry={descriptions.cimb} />
             </td>
-            <td>
-              <img src={require('./cimb.jpg')} alt="cimb" height="100px" />
+            <td className={styles.imageContent}>
+              <img src={require('./cimb.jpg')} alt="cimb" height="130px" />
             </td>
           </tr>
           <tr className={styles.rowWithBorder}>
             <td className={styles.descriptionContent}>
               <ResumeEntry entry={descriptions.imaginecup} />
             </td>
-            <td>
+            <td className={styles.imageContent}>
               <img
                 src={require('./imaginecup.jpg')}
                 alt="imaginecup"
-                height="100px"
+                height="130px"
               />
             </td>
           </tr>
@@ -53,8 +53,8 @@ class ResumePage extends React.Component {
             <td className={styles.descriptionContent}>
               <ResumeEntry entry={descriptions.sia} />
             </td>
-            <td>
-              <img src={require('./sia.jpg')} alt="sia" height="100px" />
+            <td className={styles.imageContent}>
+              <img src={require('./sia.jpg')} alt="sia" height="120px" />
             </td>
           </tr>
         </table>
@@ -62,7 +62,7 @@ class ResumePage extends React.Component {
         <div className={styles.sectionTitle}>Projects</div>
         <table className={styles.tableStyle}>
           <tr className={styles.rowWithBorder}>
-            <td>
+            <td className={styles.imageContent}>
               <img src={require('./gnn.png')} alt="fyp" height="100px" />
             </td>
             <td className={styles.descriptionContent}>
@@ -70,7 +70,7 @@ class ResumePage extends React.Component {
             </td>
           </tr>
           <tr className={styles.rowWithoutBorder}>
-            <td>
+            <td className={styles.imageContent}>
               <img
                 src={require('./website.png')}
                 alt="website"
