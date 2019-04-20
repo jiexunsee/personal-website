@@ -1,30 +1,18 @@
 :local(.allContent) {
-  /* -ms-box-orient: column;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column; */
   display: block;
   margin: auto;
   text-align: center;
   padding: 0px;
 }
 
-:local(.rowContent) {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 20px;
+:local(.tableStyle) {
+  width: 100%;
+  padding: 20px;
+  border-collapse: collapse;
 }
 
-:local(.titleAndDescription) {
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  white-space: pre-wrap;
+:local(.rowWithBorder) {
+  border-bottom: thin solid black;
 }
 
 :local(.sectionTitle) {
@@ -36,21 +24,13 @@
   text-align: start;
 }
 
-:local(.imageContent) {
-  flex-grow: 1;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-
 :local(.descriptionContent) {
   width: 550px;
   font-family: Archivo;
   line-height: 25px;
   font-size: 14px;
   text-align: justify;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 40px;
 }
 
 :local(.separatorLine) {
@@ -60,6 +40,12 @@
   align-self: center;
 }
 
+/* for ResumeEntry */
+:local(.titleAndDescription) {
+  white-space: pre-wrap;
+}
+
 :local(.descriptionWords) {
   white-space: pre-wrap;
+  font-family: Archivo;
 }

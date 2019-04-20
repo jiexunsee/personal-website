@@ -8,109 +8,80 @@ class ResumePage extends React.Component {
     return (
       <div className={styles.allContent}>
         <div className={styles.sectionTitle}>Work Experience</div>
-        <div className={styles.rowContent}>
-          <div className={styles.imageContent}>
-            <img
-              // src={require(`${descriptions.hudl.image}`)}
-              src={require('./hudl.png')}
-              alt="hudl"
-              height="40px"
-            />
-          </div>
-          <div className={styles.descriptionContent}>
-            <ResumeEntry entry={descriptions.hudl} />
-          </div>
-        </div>
-        <div className={styles.separatorLine} />
-
-        <div className={styles.rowContent}>
-          <div className={styles.imageContent}>
-            <img
-              // src={require(`${descriptions.mclaren.image}`)}
-              src={require('./mclaren.png')}
-              alt="mclaren"
-              height="35px"
-            />
-          </div>
-          <div className={styles.descriptionContent}>
-            <ResumeEntry entry={descriptions.mclaren} />
-          </div>
-        </div>
+        <table className={styles.tableStyle}>
+          <tr className={styles.rowWithBorder}>
+            <td>
+              <img src={require('./hudl.png')} alt="hudl" height="40px" />
+            </td>
+            <td className={styles.descriptionContent}>
+              <ResumeEntry entry={descriptions.hudl} />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src={require('./mclaren.png')} alt="mclaren" height="40px" />
+            </td>
+            <td className={styles.descriptionContent}>
+              <ResumeEntry entry={descriptions.mclaren} />
+            </td>
+          </tr>
+        </table>
 
         <div className={styles.sectionTitle}>Achievements</div>
-        <div className={styles.rowContent}>
-          <div className={styles.descriptionContent}>
-            <ResumeEntry entry={descriptions.cimb} />
-          </div>
-          <div className={styles.imageContent}>
-            <img
-              // src={require(`${descriptions.cimb.image}`)}
-              src={require('./cimb.jpg')}
-              alt="cimb"
-              height="100px"
-            />
-          </div>
-        </div>
-        <div className={styles.separatorLine} />
-
-        <div className={styles.rowContent}>
-          <div className={styles.descriptionContent}>
-            <ResumeEntry entry={descriptions.imaginecup} />
-          </div>
-          <div className={styles.imageContent}>
-            <img
-              // src={require(`${descriptions.imaginecup.image}`)}
-              src={require('./imaginecup.jpg')}
-              alt="imaginecup"
-              height="100px"
-            />
-          </div>
-        </div>
-        <div className={styles.separatorLine} />
-
-        <div className={styles.rowContent}>
-          <div className={styles.descriptionContent}>
-            <ResumeEntry entry={descriptions.sia} />
-          </div>
-          <div className={styles.imageContent}>
-            <img
-              // src={require(`${descriptions.sia.image}`)}
-              src={require('./sia.jpg')}
-              alt="sia"
-              height="100px"
-            />
-          </div>
-        </div>
+        <table className={styles.tableStyle}>
+          <tr className={styles.rowWithBorder}>
+            <td className={styles.descriptionContent}>
+              <ResumeEntry entry={descriptions.cimb} />
+            </td>
+            <td>
+              <img src={require('./cimb.jpg')} alt="cimb" height="100px" />
+            </td>
+          </tr>
+          <tr className={styles.rowWithBorder}>
+            <td className={styles.descriptionContent}>
+              <ResumeEntry entry={descriptions.imaginecup} />
+            </td>
+            <td>
+              <img
+                src={require('./imaginecup.jpg')}
+                alt="imaginecup"
+                height="100px"
+              />
+            </td>
+          </tr>
+          <tr className={styles.rowWithoutBorder}>
+            <td className={styles.descriptionContent}>
+              <ResumeEntry entry={descriptions.sia} />
+            </td>
+            <td>
+              <img src={require('./sia.jpg')} alt="sia" height="100px" />
+            </td>
+          </tr>
+        </table>
 
         <div className={styles.sectionTitle}>Projects</div>
-        <div className={styles.rowContent}>
-          <div className={styles.imageContent}>
-            <img
-              // src={require(`${descriptions.cimb.image}`)}
-              src={require('./gnn.png')}
-              alt="gnn"
-              height="100px"
-            />
-          </div>
-          <div className={styles.descriptionContent}>
-            <ResumeEntry entry={descriptions.fyp} />
-          </div>
-        </div>
-        <div className={styles.separatorLine} />
-
-        <div className={styles.rowContent}>
-          <div className={styles.imageContent}>
-            <img
-              // src={require(`${descriptions.cimb.image}`)}
-              src={require('./website.png')}
-              alt="website"
-              height="100px"
-            />
-          </div>
-          <div className={styles.descriptionContent}>
-            <ResumeEntry entry={descriptions.website} />
-          </div>
-        </div>
+        <table className={styles.tableStyle}>
+          <tr className={styles.rowWithBorder}>
+            <td>
+              <img src={require('./gnn.png')} alt="fyp" height="100px" />
+            </td>
+            <td className={styles.descriptionContent}>
+              <ResumeEntry entry={descriptions.fyp} />
+            </td>
+          </tr>
+          <tr className={styles.rowWithoutBorder}>
+            <td>
+              <img
+                src={require('./website.png')}
+                alt="website"
+                height="100px"
+              />
+            </td>
+            <td className={styles.descriptionContent}>
+              <ResumeEntry entry={descriptions.website} />
+            </td>
+          </tr>
+        </table>
       </div>
     );
   }
