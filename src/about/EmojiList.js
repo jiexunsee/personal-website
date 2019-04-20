@@ -7,7 +7,7 @@ class EmojiList extends React.Component {
   renderList() {
     return this.props.interests.map(interest => {
       return (
-        <div key={interest.title}>
+        <div key={interest.title} className="emojiColumn">
           <Emoji interest={interest} />
         </div>
       );
@@ -15,7 +15,12 @@ class EmojiList extends React.Component {
   }
 
   render() {
-    return <div className={styles.emojiList}>{this.renderList()}</div>;
+    // return <div className={styles.emojiList}>{this.renderList()}</div>;
+    return (
+      <div className={styles.emojiListContainer}>
+        <div className="emojiRow">{this.renderList()}</div>
+      </div>
+    );
   }
 }
 
