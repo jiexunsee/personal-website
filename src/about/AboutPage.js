@@ -20,7 +20,7 @@ class AboutPage extends React.Component {
       description = '';
     }
     return (
-      <div className={styles.contentbox}>
+      <div className={styles.contentBox}>
         <AboutMainInfo infoStyle={infoStyle} />
         <EmojiInfo description={description} />
         <EmojiList />
