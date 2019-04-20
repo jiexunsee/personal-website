@@ -6,15 +6,13 @@ class MainPage extends React.Component {
   render() {
     return (
       <div className={styles.contentBox}>
-        <div style={{ flexGrow: 3 }} />
         <div>
           <h1 className={styles.hello}>Hello!</h1>
-          <h2 className={styles.text}>I'm Jie Xun.</h2>
+          <h2 className={styles.text}>My name is Jie Xun.</h2>
           <h4 className={styles.text}>
             I'm a computer scientist from Singapore.
           </h4>
         </div>
-        <div style={{ flexGrow: 5 }} />
         <div className={styles.contactBox}>
           <ContactIcon
             link="http://instagram.com"
