@@ -21,7 +21,6 @@ class App extends React.Component {
             <Link className={styles.link} to="/">
               Home
             </Link>
-            <div className={styles.blankspace} />
             <Link className={styles.link} to="/about">
               About
             </Link>
