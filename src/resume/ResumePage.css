@@ -35,6 +35,7 @@
 
 :local(.imageContent) {
   padding: 0px;
+  width: 250px;
   /* max-width: 140px; */
 }
 
