@@ -5,6 +5,15 @@
   text-align: center;
 }
 
+:local(.introductionText) {
+  margin-bottom: 20px;
+  font-size: smaller;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 650px;
+}
+
 :local(.descriptionBox) {
   max-width: 650px;
   margin-left: auto;
@@ -56,7 +65,7 @@
   font-family: Archivo;
   font-style: italic;
   line-height: 20px;
-  font-size: 15px;
+  font-size: medium;
   max-width: 650px;
   margin-top: 80px;
   margin-left: auto;

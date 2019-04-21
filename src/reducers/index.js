@@ -6,7 +6,7 @@ const partsReducer = () => {
     {
       title: 'God is the loving ruler and creator of the world.',
       description:
-        'In the beginning, God created the world and all that we see in it. He also made us, people, in his likeness, and put us in charge of the world.',
+        'In the beginning, God created the world. He is the intelligent designer behind all that we see and know about the world. He also made us, mankind, in his likeness, and put us in charge of the world to take care of it and enjoy his blessing under his rule.',
       transition: "But this clearly isn't the way it is now...",
       image: './box1.jpg',
       imageAlt: '1'
@@ -30,7 +30,7 @@ const partsReducer = () => {
     {
       title: 'In his love, God sent his son Jesus to die in our place.',
       description:
-        "Because of his great love and mercy, God did not leave us to suffer the consequences of our foolish rebellion. He sent his son Jesus into the world, who always lived under God's rule and perfectly submitted to God's authority. He did not deserve to die, but it was for this very purpose that he came into the world, to die in our place. As a result, Jesus took upon himself the punishment for our rebellion, so that forgiveness is available for us.",
+        "Because of his love and mercy, God did not leave us to suffer the consequences of our foolish rebellion. He sent his son Jesus into the world, who always lived under God's rule and authority. He thus did not deserve to die, but it was for this very purpose that he came into the world - to die in our place. In doing so, Jesus took upon himself the punishment for our rebellion, so that forgiveness is available for us.",
       transition: "That's not all.",
       image: './box4.jpg',
       imageAlt: '4'
@@ -38,7 +38,7 @@ const partsReducer = () => {
     {
       title: 'God raised Jesus to life as ruler of the world.',
       description:
-        "God raised Jesus to life again, and Jesus now reigns in heaven with all authority. Jesus' resurrection demonstrates that God accepted his death as a complete payment for our sin. It also displays his victory over death and gives us confidence to trust him. Jesus now offers forgiveness of sin, new life, and relationship with God. He will return to judge, and those who trust in him will not be condemned because we are pardoned through his death.",
+        "God raised Jesus to life again, and Jesus now reigns in heaven with all authority. Jesus' resurrection demonstrates that God accepted his death as a complete payment for our sin of rebellion. It also displays his victory over death and gives us confidence to trust him. Jesus now offers forgiveness of sin, new life, and relationship with God. He will return to judge, and those who trust in him will not be condemned because of his death in our place.",
       transition: 'Where does that leave us?',
       image: './box5.jpg',
       imageAlt: '5'
@@ -46,7 +46,7 @@ const partsReducer = () => {
     {
       title: 'This leaves us with a choice to be made.',
       description:
-        "We can choose to continue in rebellion against God, but this only leads to God's rightful punishment of death and condemnation. However, if we turn back to God and appeal for mercy, trusting in Jesus' death and resurrection, then everything changes. God accepts Jesus' death as payment for our sins, and we are forgiven and given new, eternal life.",
+        "We can choose to continue in rebellion against God, but this only leads to God's rightful punishment of death and condemnation. However, if we turn back to God and appeal for mercy, trusting in Jesus' death and resurrection, then everything changes. God accepts Jesus' death as payment for our sin, and we are forgiven and given new, eternal life.",
       transition: 'Which of these represents the way you want to live?',
       image: './box6.jpg',
       imageAlt: '6'
