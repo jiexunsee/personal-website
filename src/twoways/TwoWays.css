@@ -1,11 +1,14 @@
-:local(.horizontalList) {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+:local(.contentBox) {
+  display: block;
+  padding-top: 40px;
+  margin: auto;
+  text-align: center;
 }
 
-:local(.contentBox) {
-  padding: 40px;
+:local(.descriptionBox) {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 :local(.headingStyle) {
@@ -23,17 +26,46 @@
 }
 
 :local(.iconStyle) {
-  margin: 20px;
+  /* margin: 20px; */
   max-height: 100%;
-  width: auto;
   align-self: center;
+}
+
+:local(.listBox) {
+  display: block;
+  text-align: center;
+}
+
+:local(.horizontalList) {
+  display: block;
+}
+
+:local(.partBox) {
+  display: inline-block;
 }
 
 :local(.imageContainer) {
   height: 100px;
   width: 100px;
-  justify-content: center;
-  display: flex;
   border: 1px solid;
   border-color: black;
+  margin: 0 auto;
+}
+
+:local(.footnote) {
+  font-family: Archivo;
+  font-style: italic;
+  line-height: 20px;
+  font-size: 15px;
+  max-width: 650px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+:local(.link) {
+  color: cadetblue;
+}
+:local(.link):visited {
+  color: cadetblue;
 }

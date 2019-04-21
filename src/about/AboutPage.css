@@ -4,15 +4,6 @@
 }
 
 :local(.contentBox) {
-  /* -ms-box-orient: column;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1; */
   display: block;
   margin: auto;
   text-align: center;
@@ -33,10 +24,9 @@
 }
 
 :local(.emojiImage) {
-  height: 70px;
-  width: 70px;
-  padding: 15px;
-  float: left;
+  height: 60px;
+  width: 60px;
+  padding: 10px;
   margin: 0 auto;
 }
 
@@ -56,50 +46,17 @@
   margin: auto;
 }
 
-:local(.emojiList) {
-  display: inline;
-  margin: 0 auto;
-  background-color: black;
-  /* margin-left: auto;
-  margin-right: auto; */
-}
-
 :local(.helper) {
   opacity: 0.7;
   display: block;
   margin: auto;
 }
 
-/* testing */
-
-:local(.emojiListContainer) {
-  display: block;
+:local(.emojiRow) {
+  /* display: inline-block; */
   text-align: center;
 }
-/* Container for flexboxes */
-.emojiRow {
-  display: flex;
-  flex-wrap: wrap;
-}
 
-/* Create four equal columns */
-.emojiColumn {
-  flex: 16.6%;
-  padding: 0px;
-  display: flex;
-  justify-content: center;
-}
-
-/* On screens that are 992px wide or less, go from four columns to two columns */
-@media screen and (max-width: 850px) {
-  .emojiColumn {
-    flex: 33.3%;
-  }
-}
-
-/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .emojiRow {
-    flex-direction: column;
-  }
+:local(.emojiColumn) {
+  display: inline-block;
 }

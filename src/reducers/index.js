@@ -44,7 +44,7 @@ const partsReducer = () => {
       imageAlt: '5'
     },
     {
-      title: 'Two ways to live.',
+      title: 'This leaves us with a choice to be made.',
       description:
         "We can choose to continue in rebellion against God, but this only leads to God's rightful punishment of death and condemnation. However, if we turn back to God and appeal for mercy, trusting in Jesus' death and resurrection, then everything changes. God accepts Jesus' death as payment for our sins, and we are forgiven and given new, eternal life.",
       transition: 'Which of these represents the way you want to live?',
@@ -103,15 +103,14 @@ const interestsReducer = () => {
     },
     {
       title: 'books',
-      description:
-        'Books are the best way to pass time. Recommend me something to read on goodreads (click the book emoji).',
+      description: 'Books are the best way to pass time.',
       image: './books.png',
       link: null
     },
     {
       title: 'music',
       description:
-        'Coldplay, Cityalight, John Mayer, Eric Chou, Shane and Shane, Khalid depending on mood and occasion.',
+        'Coldplay, Cityalight, John Mayer, Eric Chou, Shane and Shane, Khalid - depending on occasion.',
       image: './headphones.png',
       link: null
     }

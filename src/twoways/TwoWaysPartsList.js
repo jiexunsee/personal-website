@@ -8,7 +8,7 @@ class TwoWaysPartsList extends React.Component {
   renderList() {
     return this.props.parts.map(part => {
       return (
-        <div key={part.title}>
+        <div className={styles.partBox} key={part.title}>
           <TwoWaysIcon part={part} />
         </div>
       );

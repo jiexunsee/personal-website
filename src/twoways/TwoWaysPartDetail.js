@@ -6,7 +6,7 @@ const TwoWaysPartDetail = ({ part }) => {
   // part is prop passed into this function component
   return (
     <div>
-      <div>
+      <div className={styles.descriptionBox}>
         <div className={styles.headingStyle}>{part.title}</div>
         <div className={styles.descriptionStyle}>{part.description}</div>
       </div>

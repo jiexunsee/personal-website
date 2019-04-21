@@ -14,7 +14,6 @@
   /* position: fixed; */
   text-align: end;
   top: 0;
-  width: auto;
 }
 
 :local(.link) {
