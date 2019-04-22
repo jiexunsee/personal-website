@@ -18,7 +18,7 @@ class TwoWays extends React.Component {
           website
         </a>{' '}
         contains a fuller explanation and offers more information on where to go
-        from here. Do check it out!
+        from here. Do check it out, or talk to me!
       </div>
     );
   }
