@@ -91,7 +91,7 @@ const interestsReducer = () => {
     {
       title: 'bread',
       description:
-        'I love bread and could survive on it. Shout out to gokuku, duke, four leaves, etc.',
+        'I love bread and could survive on it. Shout out to gokuku, barcook, four leaves, etc.',
       image: './bread.png',
       link: null
     },
@@ -110,7 +110,7 @@ const interestsReducer = () => {
     {
       title: 'music',
       description:
-        'Coldplay, Cityalight, John Mayer, Eric Chou, Shane and Shane, Khalid - depending on occasion.',
+        'CityAlight, Coldplay, John Mayer, Eric Chou, Shane and Shane, Khalid - depends on occasion.',
       image: './headphones.png',
       link: null
     }
