@@ -9,6 +9,9 @@ const TwoWaysPartDetail = ({ part }) => {
       <div className={styles.descriptionBox}>
         <div className={styles.headingStyle}>{part.title}</div>
         <div className={styles.descriptionStyle}>{part.description}</div>
+        <br />
+        <br />
+        <div className={styles.transitionStyle}>{part.transition}</div>
       </div>
     </div>
   );

@@ -34,6 +34,13 @@
   text-align: justify;
 }
 
+:local(.transitionStyle) {
+  font-family: Archivo;
+  line-height: 25px;
+  font-size: 15px;
+  font-style: italic;
+}
+
 :local(.iconStyle) {
   /* margin: 20px; */
   max-height: 100%;
@@ -62,8 +69,6 @@
 }
 
 :local(.footnote) {
-  font-family: Archivo;
-  font-style: italic;
   line-height: 20px;
   font-size: medium;
   max-width: 650px;

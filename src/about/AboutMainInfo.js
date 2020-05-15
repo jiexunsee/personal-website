@@ -14,7 +14,7 @@ const AboutMainInfo = props => {
         My name is <b>Jie Xun</b>, and I am a Computer Science student under the
         Renaissance Engineering Programme at Nanyang Technological University.
         <br />
-        <br />I will be graduating in December 2019.
+        <br />I graduated in December 2019.
       </p>
     </div>
   );

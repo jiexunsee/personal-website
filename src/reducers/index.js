@@ -47,23 +47,25 @@ const partsReducer = () => {
       title: 'This leaves us with a choice to be made.',
       description:
         "We can choose to continue in rebellion against God, but this only leads to God's rightful punishment of death and condemnation. However, if we turn back to God and appeal for mercy, trusting in Jesus' death and resurrection, then everything changes. God accepts Jesus' death as payment for our sin, and we are forgiven and given new, eternal life.",
-      transition: 'Which of these represents the way you want to live?',
+      transition: 'Which of these represents the way you want to live?', //TODO: add in the transition lines
       image: './box6.jpg',
       imageAlt: '6'
     }
   ];
 };
 
-const defaultPart = {
-  title: 'God is the loving ruler and creator of the world.',
-  description:
-    'In the beginning, God created the world and all that we see in it. He also made us, people, in his likeness, and put us in charge of the world.',
-  transition: "But this clearly isn't the way it is now...",
-  image: './box1.jpg',
-  imageAlt: '1'
-};
+// const defaultPart = {
+//   title: 'God is the loving ruler and creator of the world.',
+//   description:
+//     'In the beginning, God created the world and all that we see in it. He also made us, people, in his likeness, and put us in charge of the world.',
+//   transition: "But this clearly isn't the way it is now...",
+//   image: './box1.jpg',
+//   imageAlt: '1'
+// };
 
-const selectedPartReducer = (selectedPart = partsReducer()[0], action) => {
+const defaultPart = partsReducer()[0];
+
+const selectedPartReducer = (selectedPart = defaultPart, action) => {
   if (action.type === 'PART_SELECTED') {
     return action.payload;
   } else if (action.type === 'DEFAULT_PART_SELECTED') {
@@ -110,7 +112,7 @@ const interestsReducer = () => {
     {
       title: 'music',
       description:
-        'CityAlight, Coldplay, John Mayer, Eric Chou, Shane and Shane, Khalid - depends on occasion.',
+        'Depends on mood. But always in the mood for CityAlight, John Mayer, Shane and Shane, Tom Misch.',
       image: './headphones.png',
       link: null
     }

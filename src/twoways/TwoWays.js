@@ -23,7 +23,7 @@ class TwoWays extends React.Component {
     );
   }
   render() {
-    this.props.mouseOverInterest(null);
+    this.props.mouseOverInterest(null); // to clear the selected interest. (the cross interest would have been selected as the cross was clicked)
     // this.props.selectDefaultPart(); // depends if you want to start from start again when user navigates away and comes back
     return (
       <div className={styles.contentBox}>
@@ -47,7 +47,7 @@ const mapStateToProps = state => {
   return { selectedPart: state.selectedPart };
 };
 
-export default connect(
-  mapStateToProps,
-  { mouseOverInterest, selectDefaultPart }
-)(TwoWays);
+export default connect(mapStateToProps, {
+  mouseOverInterest,
+  selectDefaultPart
+})(TwoWays);

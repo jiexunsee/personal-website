@@ -4,10 +4,6 @@ import { selectPart } from '../actions';
 import styles from './TwoWays.css';
 
 class TwoWaysIcon extends React.Component {
-  onClick() {
-    this.props.selectPart(this.props.part);
-  }
-
   renderIcon() {
     return (
       <div
@@ -36,7 +32,5 @@ const mapStateToProps = state => {
   return { selectedPart: state.selectedPart };
 };
 
-export default connect(
-  mapStateToProps,
-  { selectPart }
-)(TwoWaysIcon);
+// need to tell redux that this function is an action creator. action needs to be sent to dispatch function
+export default connect(mapStateToProps, { selectPart })(TwoWaysIcon);
