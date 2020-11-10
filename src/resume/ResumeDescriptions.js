@@ -42,6 +42,6 @@ export const descriptions = {
     image: 'website.png',
     title: 'Personal website, this one',
     description:
-      'A undertaking to create a website using React, Redux, HTML, CSS, JS. Available on GitHub.'
+      'An undertaking to create a website using React, Redux, HTML, CSS, JS. Available on GitHub.'
   }
 };
